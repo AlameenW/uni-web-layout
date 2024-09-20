@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                <title>Demo University Website</title>
+                <link rel="stylesheet" href="styles.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+                <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+            </head>
+            <body>
+                <section class="sub-header">
+                    <nav>
+                        <a href="index.html"><img src="/images/logo.png" alt="University logo"></a>
+                        <div class="nav-links" id="navLinks">
+                            <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="course.html">COURSE</a></li>
+                                <li><a href="blog.html">BLOG</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                        <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+                    </nav>
+                    <h1>About Us</h1>
+                </section>
+
+                <section class="about-us">
+                    <div class="row">
+                        <div class="about-col">
+                            <h1>We are the world's largest University</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis debitis id soluta tenetur laboriosam, ab eveniet sequi tempora nihil autem suscipit culpa enim unde est, corporis dolorem perspiciatis. Accusantium, rerum?</p>
+                            <a href="" class="hero-btn red-btn">EXPLORE NOW!</a>
+                        </div>
+                        <div class="about-col">
+                            <img src="/images/about.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-- Footer -->
+                <section class="footer">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore nemo harum modi assumenda voluptates! <br>At voluptas molestiae quibusdam, perferendis alias unde voluptate, minima consequatur ea cupiditate doloribus nisi minus?</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <p>Made by <i class="fa-brands fa-github"></i> alameenw</p>
+                </section>
+            </body>
+            <script>
+                var navlinks = documnet.getElementById(navLinks);
+        
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </html>
+</body>
+</html>
